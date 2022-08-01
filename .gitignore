@@ -1,0 +1,16 @@
+app.log
+.idea
+user_guide
+application/vendor
+application/logs/*
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+uploads/**/*
+!uploads/.gitkeep
+!uploads/temp/.gitkeep
+/vendor/
+application/tests/_ci_phpunit_test
+application/tests/build
+application/tests/.phpunit.result.cache
+.env

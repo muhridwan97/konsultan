@@ -1,0 +1,39 @@
+image: atlassian/default-image:latest
+
+pipelines:
+  branches:
+    develop:
+      - step:
+          name: "Deploy to Demo"
+          deployment: test
+          script:
+            - ssh -tt $TEST_SSH -p 22 << EOF
+            - echo "Deploying to test environment"
+            - cd /var/www/warehouse-demo
+            - git pull origin develop
+            - php index.php migrate
+            - cd /var/www/warehouse-demo/application
+            - composer install --no-dev --prefer-dist --no-interaction
+            - exit $?
+            - EOF
+            - echo "Deploy steps finished"
+          after-script:
+            - echo $BITBUCKET_EXIT_CODE
+    staging:
+      - step:
+          name: "Deploy to staging"
+          deployment: staging
+          script:
+            - ssh -tt $STAGING_SSH -p 22 << EOF
+            - echo "Deploying to staging environment"
+            - cd $STAGING_DEPLOY_PATH
+            - git checkout master
+            - git pull origin master
+            - php index.php migrate
+            - cd "${STAGING_DEPLOY_PATH}/application"
+            - composer install --no-dev --prefer-dist --no-interaction
+            - exit $?
+            - EOF
+            - echo "Deploy steps finished"
+          after-script:
+            - echo $BITBUCKET_EXIT_CODE

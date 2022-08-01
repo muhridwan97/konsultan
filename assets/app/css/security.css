@@ -1,0 +1,25 @@
+#modal-scanner {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  background: white;
+  width: 100%;
+  height: 100vh;  
+}
+#message-wrapper {
+    height: calc(100vh - 2rem);
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    background-color: white;
+    opacity: 1;
+    color: #aaaeb1;
+}

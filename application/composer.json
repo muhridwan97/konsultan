@@ -1,0 +1,41 @@
+{
+    "name": "transcon/warehouse",
+    "description": "Transcon warehouse management system",
+    "type": "project",
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*",
+        "ext-simplexml": "*",
+        "ext-mysqli": "*",
+        "ext-intl": "*",
+        "milon/barcode": "^5.3",
+        "dompdf/dompdf": "^0.8.3",
+        "tecnickcom/tcpdf": "^6.2",
+        "vlucas/phpdotenv": "^2.5",
+        "phpoffice/phpspreadsheet": "^1.8",
+        "guzzlehttp/guzzle": "^6.3",
+        "pusher/pusher-php-server": "^4.0",
+        "intervention/image": "^2.5",
+        "box/spout": "^3.0",
+        "aws/aws-sdk-php": "^3.135",
+        "zendframework/zend-soap": "^2.8",
+        "ext-json": "*",
+        "ext-soap": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rubi Alam Mesra ",
+            "email": "it2@transcon-indonesia.com"
+        },
+        {
+            "name": "Fatich",
+            "email": "it5@transcon-indonesia.com"
+        },
+        {
+            "name": "Angga Ari Wijaya",
+            "email": "anggadarkprince@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
