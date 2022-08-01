@@ -50,14 +50,14 @@ if ($segment1 == 'p') {
 
             <?php
             $masterMenu = [
-                'role', 'user', 'branch', 'warehouse', 'container', 'goods', 'people', 'customer-storage-capacity', 'module', 'eseal', 'vehicle',
+                'role', 'user', 'branch', 'warehouse', 'container', 'goods', 'customer', 'customer-storage-capacity', 'module', 'eseal', 'vehicle',
                 'position-type', 'position', 'unit', 'conversion', 'permission', 'document-type', 'booking-type', 'checklist-type', 'checklist', 'complain-kpi', 'complain-category',
                 'handling-type', 'component', 'component_price', 'extension-field', 'overtime', 'complain-category', 'service-hour', 'heavy_equipment',
                 'target', 'item-compliance', 'attachment-photo', 'operation-cut-off'
             ];
             $masterMenuAuthorized = [
                 'role-view', 'user-view', 'branch-view', 'warehouse-view', 'container-view', 'position-type-view', 'service-hour-view', 'customer-storage-capacity-view',
-                'goods-view', 'people-view', 'checklist-type-view', 'checklist-view', 'customer-view', 'supplier-view', 'position-view', 'unit-view', 'conversion-view', 'permission-view', 'document-type-view', 'booking-type-view', 'extension-field-view', 'overtime-view', 'complain-kpi-view', 'complain-category-view',
+                'goods-view', 'customer-view', 'checklist-type-view', 'checklist-view', 'customer-view', 'supplier-view', 'position-view', 'unit-view', 'conversion-view', 'permission-view', 'document-type-view', 'booking-type-view', 'extension-field-view', 'overtime-view', 'complain-kpi-view', 'complain-category-view',
                 'item-compliance-view', 'attachment-photo-view', PERMISSION_OPERATION_CUT_OFF_VIEW
             ];
             $masterIsVisible = false;

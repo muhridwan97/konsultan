@@ -21,12 +21,10 @@
             <thead>
             <tr>
                 <th style="width: 30px">No</th>
-                <th>Type</th>
-                <th>No Person</th>
+                <th>Identity Number</th>
                 <th>Name</th>
                 <th>Contact</th>
                 <th>Email</th>
-                <th>WhatsApp Group</th>
                 <th style="width: 60px">Action</th>
             </tr>
             </thead>
@@ -56,7 +54,7 @@
             $allowEdit =  $editCustomer ;
             ?>
             <?php if ($allowEdit): ?>
-                <li class="action-edit" data-edit-person="<?= $editPerson ?>" data-edit-customer="<?= $editCustomer ?>" data-edit-supplier="<?= $editSupplier ?>">
+                <li class="action-edit" data-edit-customer="<?= $editCustomer ?>">
                     <a href="<?= site_url('customer/edit/{{id}}') ?>">
                         <i class="fa ion-compose"></i>Edit
                     </a>
@@ -69,7 +67,7 @@
             ?>
             <?php if ($allowDelete): ?>
                 <li role="separator" class="divider action-delete-divider"></li>
-                <li class="action-delete" data-delete-person="<?= $deletePerson ?>" data-delete-customer="<?= $deleteCustomer ?>" data-delete-supplier="<?= $deleteSupplier ?>">
+                <li class="action-delete" data-delete-customer="<?= $deleteCustomer ?>">
                     <a href="<?= site_url('customer/delete/{{id}}') ?>"
                        class="btn-delete"
                        data-id="{{id}}"

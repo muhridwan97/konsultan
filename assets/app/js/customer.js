@@ -16,12 +16,10 @@ $(function () {
                 class: 'responsive-hide',
                 data: 'no'
             },
-            {data: 'type'},
-            {data: 'no_person'},
+            {data: 'identity_number'},
             {data: 'name'},
             {data: 'contact'},
             {data: 'email'},
-            {data: 'whatsapp_group'},
             {data: 'id'}
         ],
         columnDefs: [{

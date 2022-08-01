@@ -20,11 +20,11 @@ if (!function_exists('flash')) {
         $status = $dataStatus[1] ?? $status;
         $message = $dataMessage[1] ?? $message;
 
-        session_start();
-        get_instance()->session->set_flashdata([
-            $statusKey => $status, $messageKey => $message,
-        ]);
-        session_write_close();
+        // session_start();
+        // get_instance()->session->set_flashdata([
+        //     $statusKey => $status, $messageKey => $message,
+        // ]);
+        // session_write_close();
 
         if (!empty($redirectTo)) {
             // do not support redirect with multiple query params /booking?status=ACTIVE&customer=1
